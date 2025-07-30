@@ -26,4 +26,4 @@ jobs:
         echo prod-version ${{steps.version.outputs.prod-branch}} 
         echo test-version ${{steps.version.outputs.test-branch}} 
         echo dev-version ${{steps.version.outputs.dev-branch}}
-        echo revision steps.version.outputs.revision
+        echo revision ${{steps.version.outputs.revision}}
