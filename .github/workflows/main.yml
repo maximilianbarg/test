@@ -23,5 +23,5 @@ jobs:
 
     - name: Output
       run: |
-        echo tag-version {prod-branch} {test-branch} {dev-branch}
-        echo revision {new-revision}
+        echo tag-version ${{prod-branch}} {{test-branch}} {{dev-branch}}
+        echo revision {{new-revision}}
