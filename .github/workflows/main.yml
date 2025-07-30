@@ -11,7 +11,12 @@ jobs:
     - name: Checkout  
       uses: actions/checkout@v2  
       with:  
-          fetch-depth: 0  
+          fetch-depth: 0
+
+    - name: Output
+      run: |
+        git config --global user.email "bargmaxi@gmail.com"
+        git config --global user.name "Maximilian Barg"
           
     - name: Version  
       id: version  
