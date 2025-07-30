@@ -23,12 +23,9 @@ jobs:
       uses: maximilianbarg/tag-version@master  
       with:  
           production-branch: main  
-          test-branch: main  
-          dev-branch: main 
+          #test-branch: main  
+          #dev-branch: main 
 
     - name: Output
       run: |
-        echo prod-version ${{steps.version.outputs.prod-branch}} 
-        echo test-version ${{steps.version.outputs.test-branch}} 
-        echo dev-version ${{steps.version.outputs.dev-branch}}
         echo revision ${{steps.version.outputs.revision}}
