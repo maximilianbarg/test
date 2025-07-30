@@ -1,0 +1,27 @@
+on:
+  push:
+    branches:
+    - main
+    - release/*
+
+jobs:
+  tag:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout  
+      uses: actions/checkout@v2  
+      with:  
+          fetch-depth: 0  
+          
+    - name: Version  
+      id: version  
+      uses: juliansangillo/tag-version@v1  
+      with:  
+          production-branch: main  
+          test-branch: main  
+          dev-branch: main 
+
+    - name: Output
+      run: |
+        echo tag-version {prod-branch} {test-branch} {dev-branch}
+        echo revision {new-revision}
