@@ -23,5 +23,7 @@ jobs:
 
     - name: Output
       run: |
-        echo tag-version {{prod-branch}} {{test-branch}} {{dev-branch}}
-        echo revision steps.tag-version.outputs.revision
+        echo prod-version ${{steps.version.outputs.prod-branch}} 
+        echo test-version ${{steps.version.outputs.test-branch}} 
+        echo dev-version ${{steps.version.outputs.dev-branch}}
+        echo revision steps.version.outputs.revision
