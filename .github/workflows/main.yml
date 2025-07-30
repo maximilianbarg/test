@@ -22,9 +22,7 @@ jobs:
       id: version  
       uses: maximilianbarg/tag-version@master  
       with:  
-          production-branch: main  
-          #test-branch: main  
-          #dev-branch: main 
+          production-branch: main
 
     - name: Output
       run: |
