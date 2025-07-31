@@ -10,7 +10,9 @@ jobs:
     - name: Checkout  
       uses: actions/checkout@v2  
       with:  
-          fetch-depth: 0
+          ref: ${{ github.ref_name }}   # aktueller Branchname
+          fetch-depth: 0                # wichtig für vollständige Tags und History
+          token: ${{ secrets.GITHUB_TOKEN }}  # Standard-Token reicht zum Pushen
 
     - name: Output
       run: |
