@@ -29,8 +29,9 @@ jobs:
         git-email: "downisaurier@gmail.com"
         mode: "semantic"
     
-    - run: echo ${{ steps.get-release-version.outputs.version }}
-    - run: echo ${{ steps.get-release-version.outputs.version-name }}
-    - run: echo ${{ steps.get-release-version.outputs.previous-version }}
-    - run: echo ${{ steps.get-release-version.outputs.previous-version-name }}
-    - run: echo ${{ steps.get-release-version.outputs.tag-created }}
+    - run: |
+        echo version: ${{ steps.get-release-version.outputs.version }}
+        echo version name: ${{ steps.get-release-version.outputs.version-name }}
+        echo previous version: ${{ steps.get-release-version.outputs.previous-version }}
+        echo previous version name: ${{ steps.get-release-version.outputs.previous-version-name }}
+        echo tag created: ${{ steps.get-release-version.outputs.tag-created }}
