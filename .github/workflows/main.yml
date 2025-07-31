@@ -7,17 +7,18 @@ jobs:
   tag:
     runs-on: ubuntu-latest
     steps: 
+    - name: Set branch and config
+      run: |
+        git config --global user.email "downisaurier@gmail.com"
+        git config --global user.name "Tag Version Bot"
+        git checkout main
+        
     - name: Checkout  
       uses: actions/checkout@v2  
       with:  
           ref: main   # aktueller Branchname
           fetch-depth: 0                # wichtig für vollständige Tags und History
           token: ${{ secrets.TOKEN }}  # Standard-Token reicht zum Pushen
-
-    - name: Output
-      run: |
-        git config --global user.email "downisaurier@gmail.com"
-        git config --global user.name "Tag Version Bot"
           
     - name: Version  
       id: version  
