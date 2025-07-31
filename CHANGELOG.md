@@ -1,4 +1,6 @@
 # CHANGELOG<br>0.0
+## 0.0.30
+- **2025-07-31** Update README.md | ***maximilianbarg [110603221+maximilianbarg@users.noreply.github.com]***
 ## 0.0.29
 ## 0.0.28
 ## 0.0.27
