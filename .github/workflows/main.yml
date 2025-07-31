@@ -12,7 +12,7 @@ jobs:
       with:  
           ref: ${{ github.ref_name }}   # aktueller Branchname
           fetch-depth: 0                # wichtig für vollständige Tags und History
-          token: ${{ secrets.GITHUB_TOKEN }}  # Standard-Token reicht zum Pushen
+          token: ${{ secrets.TOKEN }}  # Standard-Token reicht zum Pushen
 
     - name: Output
       run: |
