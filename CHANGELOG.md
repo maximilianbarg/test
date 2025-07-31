@@ -1,4 +1,5 @@
 # CHANGELOG<br>0.0
+## 0.0.2
 ## 0.0.1
 - **2025-07-31** Update main.yml | ***maximilianbarg [110603221+maximilianbarg@users.noreply.github.com]***
 - **2025-07-31** Update main.yml | ***maximilianbarg [110603221+maximilianbarg@users.noreply.github.com]***
